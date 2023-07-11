@@ -28,20 +28,20 @@ export interface ButtonProps {
 }
 
 export interface ModalProps {
-  isOpen?: boolean;
-  onClose: () => void;
-  onSubmit: () => void;
   title?: string;
   body?: React.ReactElement;
   footer?: React.ReactElement;
   actionLabel: string;
   disabled?: boolean;
+  isOpen?: boolean;
+  onClose: () => void;
+  onSubmit: () => void;
   secondaryAction?: () => void;
   secondaryActionLabel?: string;
 }
 
-export interface RegisterModalStore {
-  isOpen: boolean;
-  onOpen: () => void;
-  onClose: () => void;
+export interface HeadingProps {
+  title: string;
+  subtitle?: string;
+  center?: boolean;
 }
