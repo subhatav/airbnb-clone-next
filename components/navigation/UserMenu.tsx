@@ -53,7 +53,7 @@ const UserMenu = () => {
             {true ? (
               <>
                 <MenuItem
-                  isOptional={true}
+                  isOptional
                   label="Airbnb your Home"
                   onClick={() => {}}
                 />

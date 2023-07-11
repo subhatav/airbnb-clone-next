@@ -72,7 +72,7 @@ const Modal: React.FC<ModalProps> = ({
             md:h-auto md:w-4/6 lg:h-auto lg:w-3/6 xl:w-2/5
           "
         >
-          {/*content*/}
+          {/* Content */}
           <div
             className={`
               translate h-full duration-300
@@ -86,7 +86,7 @@ const Modal: React.FC<ModalProps> = ({
               bg-white shadow-lg outline-none focus:outline-none md:h-auto lg:h-auto
             "
             >
-              {/*header*/}
+              {/* Header*/}
               <div className="relative flex items-center justify-center rounded-t border-b-[1px] p-6">
                 <button
                   onClick={handleClose}
@@ -97,10 +97,10 @@ const Modal: React.FC<ModalProps> = ({
                 <div className="text-lg font-semibold">{title}</div>
               </div>
 
-              {/*body*/}
+              {/* Body*/}
               <div className="relative flex-auto p-6">{body}</div>
 
-              {/*footer*/}
+              {/* Footer*/}
               <div className="flex flex-col gap-2 p-6">
                 <div className="flex w-full flex-row items-center gap-4">
                   {secondaryAction && secondaryActionLabel && (

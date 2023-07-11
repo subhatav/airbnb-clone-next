@@ -39,3 +39,9 @@ export interface ModalProps {
   secondaryAction?: () => void;
   secondaryActionLabel?: string;
 }
+
+export interface RegisterModalStore {
+  isOpen: boolean;
+  onOpen: () => void;
+  onClose: () => void;
+}
