@@ -1,4 +1,5 @@
 import { IconType } from "react-icons";
+import { FieldErrors, FieldValues, UseFormRegister } from "react-hook-form";
 
 export interface ClientOnlyProps {
   children: React.ReactNode;
@@ -44,4 +45,15 @@ export interface HeadingProps {
   title: string;
   subtitle?: string;
   center?: boolean;
+}
+
+export interface InputProps {
+  id: string;
+  label: string;
+  type?: string;
+  required?: boolean;
+  disabled?: boolean;
+  formatPrice?: boolean;
+  register: UseFormRegister<FieldValues>;
+  errors: FieldErrors;
 }
