@@ -2,7 +2,7 @@
 
 import { MenuItemProps } from "@/interfaces";
 
-const MenuItem: React.FC<MenuItemProps> = ({ onClick, label, isOptional }) => {
+const MenuItem: React.FC<MenuItemProps> = ({ label, onClick, isOptional }) => {
   return (
     <div
       onClick={onClick}
